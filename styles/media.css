@@ -1,0 +1,81 @@
+@media (min-width: 620px){
+
+    .width-controll-btn-header{
+      min-width: 170px !important;
+    }
+  
+  }
+  
+  
+  
+  @media (min-width: 890px) {
+  
+    .show-mobile{
+      display: none !important;
+    }
+    .my-container {
+      width: 900px !important;
+    }
+    
+    .my-header-menu {
+      width: 500px;
+      box-shadow: 3px 3px 21px rgba(0,0,0,0.35);
+    }
+    
+    .width-link {
+      width: 420px !important;
+    }
+    .flex-desktop{
+      display: flex !important;
+    }
+  
+    .widthHalf-desktop{
+      width: 50% !important;
+    }
+    .show-desktop{
+      display: block !important;
+    }
+  
+    .my-shape{
+  
+      transform: scale(1) !important;
+      -webkit-transform: scale(1) !important;
+      -moz-transform: scale(1) !important;
+      -ms-transform: scale(1) !important;
+    }
+    .margin-right10-desktop{
+      margin-right: 10px;
+    }
+  
+    .margin-right30-desktop{
+      margin-right: 30px;
+    }
+    .steps .steps-wrap{
+      width:300px;
+    }
+  
+    .margin-bottom0-desktop{
+      margin-bottom:0 !important;
+    }
+    
+  }
+  
+  
+  @media (min-width: 960px) {
+  
+    .my-container {
+      width: 980px !important;
+    }
+    
+  }
+  
+  
+  
+  
+  @media (min-width: 1100px) {
+  
+    .my-container {
+      width: 1000px !important;
+    }
+    
+  }

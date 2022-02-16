@@ -1,0 +1,35 @@
+@import "./styles/colors.scss";
+@import "./styles/base.scss";
+@import "./styles/utils.scss";
+@import "./styles/media.scss";
+@import "./styles/animate.scss";
+
+body {
+  margin: 0;
+  padding: 0;
+  background: $black;
+  font-size: 13px;
+  font-family: "Lato", sans-serif;
+}
+
+.grid-4 {
+  display: grid;
+  grid-template-columns: 25% 45% 15% 15%;
+}
+.grid-3 {
+  display: grid;
+  grid-template-columns: 25% 60% 15%;
+}
+.grid-box div,
+.grid-3 div,
+.grid-4 div {
+  padding-right: 20px !important;
+  word-break: break-all;
+}
+.grid-item-odd {
+  background: #fff;
+  &:nth-child(odd) {
+    background: #e7ecf1 !important;
+  }
+}
+

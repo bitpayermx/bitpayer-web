@@ -1,6 +1,7 @@
-import '../styles/globals.css'
-import '../styles/media.css'
-import '../styles/utils.scss'
+// import '../styles/globals.css'
+import '../styles/all.css'
+// import '../styles/media.css'
+// import '../styles/utils.scss'
 // import '../styles/Home.module.scss'
 
 

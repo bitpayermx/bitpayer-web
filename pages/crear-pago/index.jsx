@@ -37,9 +37,7 @@ export default function CrearPgo(){
             .catch(err =>{
                 console.log(err)
             })
-        
 
-        // console.log('hey dataaa', newData)
     };
 
     const handleClick = (event) => {
@@ -91,13 +89,6 @@ export default function CrearPgo(){
 
                             <div className='margin10'>
                                 <h2 className='font1em'>Moneda:</h2>
-                                {/* <div>
-                                    <select >
-                                        <option>-</option>
-                                        <option value="MXN">MXN</option>
-                                        <option value="USD">USD</option>
-                                    </select>
-                                </div> */}
                                 <div className="back-white my-select font1em color-black" style={{width:130+"px"}}>
                                     <select onChange={handleChangeCurrency}>
                                         <option>-</option>

@@ -1036,40 +1036,6 @@ input[type=checkbox]:checked+.my-switch:after {
     border-radius: 50%
 }
 
-.check-icon,
-.checkWrap,
-background #fff,
-background yellow,
-border 1px solid darkgray,
-border-radius 50%,
-height 18px,
-height 26px !important,
-margin-bottom 15px,
-position absolute,
-position relative,
-width 18px,
-width 26px !important,
-z-index 1 !important,
-z-index 2 {
-    left: 3px;
-    top: 3px;
-    opacity: 0
-}
-
-.checkWrap input,
-.checkWrap input:checked~.check-icon,
-background #fff,
-border-radius 50%,
-height 22px !important,
-left 0,
-opacity 0,
-position absolute,
-top -4px,
-width 22px !important,
-z-index 3 {
-    opacity: 1
-}
-
 .filtro-form {
     margin: 0
 }
@@ -1887,10 +1853,6 @@ label:hover:before {
     border-radius: 1px !important
 }
 
-.vue-treeselect__placeholder {
-    padding8px:  !important
-}
-
 .vue-treeselect__control-arrow {
     width: 17px !important;
     color: #8b9ba8 !important;
@@ -1910,12 +1872,8 @@ label:hover:before {
 .vue-treeselect__control-arrow-container {
     padding-left: 8px !important;
     position: relative !important;
-    right10px:  !important
 }
 
-.border1green {
-    border1px: solid #95ca3e !important
-}
 
 .toasted.primary {
     background: #95ca3e !important;
@@ -3083,7 +3041,7 @@ body {
 }
 
 .blog-item .article-box{
-    .margin-bottom: 10px;
+    margin-bottom: 10px;
 }
 
 

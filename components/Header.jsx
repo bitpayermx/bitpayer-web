@@ -1,7 +1,19 @@
 import Image from "next/image";
 import Link from "next/link";
+import { useState, useEffect } from 'react'
+import { AiFillCaretDown } from "react-icons/ai"
+
 
 export default function Header() {
+
+  const [userLogged, setUserLogged] = useState(null)
+
+  useEffect(()=>{
+    if(localStorage.getItem('user')){
+      setUserLogged(JSON.parse(localStorage.getItem('user')))
+    }
+  }, [])
+
   return (
     <>
       <header
@@ -51,11 +63,24 @@ export default function Header() {
               <a className="color-white font1em margin-right25" href="/blog">
                 Blog
               </a>
-              <Link href="/login">
-                <a className="my-btn back-green text-uppercase color-green contactanos">
-                  <span className="font1em color-white">Iniciar Sesión</span>
-                </a>
-              </Link>
+              {
+                !userLogged && <Link href="/login">
+                  <a className="my-btn back-green text-uppercase color-green contactanos">
+                    <span className="font1em color-white">Iniciar Sesión</span>
+                  </a>
+                </Link>
+              }
+
+              {
+                userLogged && <div>
+                  <div className="my-btn color-green flex flex-center flex-middle">
+                    <p className="color-green font1em">{userLogged.name}</p>
+                    
+                    <p className="relative font20" style={{top:2+'px', right:-2+'px'}}><AiFillCaretDown /></p>
+                  </div>
+                </div>
+              }
+              
             </div>
             <div className="padding15 pointer flex hide-desktop">
               <p className="color-white relative" id="menu-btn">

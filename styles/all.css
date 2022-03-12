@@ -13,6 +13,7 @@
     margin: 0;
     outline: none;
     list-style: none;
+    line-height: 20px;
 }
 
 :focus {
@@ -556,7 +557,9 @@ h6 {
     position: relative !important;
     border: 1px solid #c7d3df;
     border-radius: 3px;
-    z-index: 5
+    z-index: 5;
+    min-height: 40px;
+    margin:0 !important;
 }
 
 .my-select select {
@@ -566,11 +569,12 @@ h6 {
     border: 0;
     background: transparent;
     width: 100%;
-    padding-left: .5em;
+    padding: 0.6em;
     z-index: 150;
-    font-size: 1.2em;
+    font-size: 1em;
     cursor: pointer;
-    position: absolute
+    position: absolute;
+
 }
 
 .my-select select option {
@@ -584,8 +588,8 @@ h6 {
     padding-left: 11px;
     color: #8b9ba9 !important;
     z-index: 12;
-    padding: 0 7px;
-    height: 98%;
+    padding: 7px;
+    top: 1px;
     border-left: 1px solid #c7d3df
 }
 
@@ -1186,7 +1190,7 @@ z-index 3 {
     font-size: 1em;
     -webkit-transition: .3s;
     transition: .3s;
-    min-width: 160px;
+    min-width: 120px;
     text-align: center
 }
 
@@ -1416,10 +1420,7 @@ z-index 3 {
     .contact-form .my-select {
         height: auto !important
     }
-    .contact-form-item input,
-    .my-select {
-        margin: 12px !important
-    }
+    
 }
 
 @media (min-width:900px) {

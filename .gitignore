@@ -1,5 +1,8 @@
 .env
 /bitpayer-resp
+.next
+
+config.js
 
 # Logs
 logs

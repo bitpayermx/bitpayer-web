@@ -4,9 +4,10 @@ import { dbConnect } from "../../../mongodb/dbConnect";
 import "../../../lib/passport";
 
 export default async function (req, res, next) {
+  res.status(200).json({ name: 'no hay 500 aqui' + process.env.DOMAIN })
   await dbConnect();
 
-  res.status(200).json({ name: 'no hay 500 aqui' })
+  
 
   passport.authenticate("google", {
     scope: ["profile", "email"],

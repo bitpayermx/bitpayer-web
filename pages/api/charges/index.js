@@ -3,11 +3,11 @@ import { dbConnect } from "../../../mongodb/dbConnect";
 dbConnect()
 
 
-const {
-  COINBASE_API_KEY,
-  COINBASE_WEBHOOK_SECRET,
-  DOMAIN,
-} = require("../../../config");
+// const {
+//   COINBASE_API_KEY,
+//   COINBASE_WEBHOOK_SECRET,
+//   DOMAIN,
+// } = require("../../../config");
 
 
 // const { Client, resources } = require("coinbase-commerce-node");

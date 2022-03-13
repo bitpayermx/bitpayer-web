@@ -4,11 +4,13 @@ import { dbConnect } from "../../../mongodb/dbConnect";
 
 import "../../../lib/passport";
 
+const DOMAIN = process.env.DOMAIN || "http://localhost:3000"
+
 export default async function (req, res, next) {
   await dbConnect();
   passport.authenticate("google", (err, user, info) => {
     if (err || !user) {
-      return res.redirect("http://localhost:3000/?a=auth_fail");
+      return res.redirect(`${DOMAIN}/?a=auth_fail`);
     }
 
     // set cookie and send redirect
@@ -16,6 +18,6 @@ export default async function (req, res, next) {
       req,
       res,
     });
-    res.redirect("http://localhost:3000/dashboard");
+    res.redirect(`${DOMAIN}/dashboard`);
   })(req, res, next);
 }

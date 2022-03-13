@@ -1,5 +1,7 @@
 import Head from 'next/head'
 import Link from 'next/link'
+import { useState, useEffect } from 'react'
+
 
 import Header from '../components/Header.jsx'
 import Footer from '../components/Footer.jsx'
@@ -11,6 +13,15 @@ import Image from 'next/image'
 const imgHand = "./payment-phone-dark.png"
 
 export default function Home() {
+
+const [userLogged, setUserLogged] = useState(null)
+
+  useEffect(()=>{
+    if(localStorage.getItem('user')){
+      setUserLogged(JSON.parse(localStorage.getItem('user')))
+    }
+  }, [])
+
   return (
     <div id="app-container">
       <div>

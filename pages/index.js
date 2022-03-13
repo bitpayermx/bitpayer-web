@@ -50,9 +50,13 @@ export default function Home() {
 
 
 		                <div class="call-wrap-actions margin-bottom30">
-		                  <button class="my-btn back-green color-green call-wrap-actions-button contactanos">
-		                    <span class="font1-3em color-white">Empezar ahora</span>
-		                  </button>
+						{
+							!userLogged && <Link href="/login">
+							<a className="my-btn back-green text-uppercase color-green contactanos">
+								<span className="font1em color-white">Iniciar Sesión</span>
+							</a>
+							</Link>
+						}
 		                  <a href="#ex1" class="anchor color-blue font1-5em" rel="modal:open">¿Qué es Bitcoin? </a>
 		                  {/* <!-- <a class="anchor font1-3em color-white call-wrap-actions-video" href="#" style="padding-bottom: 3px">
 		                    <span class="show-desktop margin-right5">Ver como</span>

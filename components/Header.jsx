@@ -9,7 +9,8 @@ export default function Header() {
   const [userLogged, setUserLogged] = useState(null)
 
   useEffect(()=>{
-    if(localStorage.getItem('user')){
+    const localUser = localStorage.getItem('user')
+    if(JSON.parse(localUser)){
       setUserLogged(JSON.parse(localStorage.getItem('user')))
     }
   }, [])
@@ -54,12 +55,15 @@ export default function Header() {
                 </a>
               </Link>
 
+              <Link href="/crear-pago">
               <a
                 className="color-white font1em margin-right25 planes"
-                href="/pricing"
+                
               >
-                Precios
+                Crear Pago
               </a>
+              </Link>
+              
               <a className="color-white font1em margin-right25" href="/blog">
                 Blog
               </a>

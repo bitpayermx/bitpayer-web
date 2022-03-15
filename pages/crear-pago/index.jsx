@@ -1,5 +1,6 @@
 import Link from 'next/link'
 import Head from 'next/head'
+import Router from 'next/router'
 import axios from 'axios'
 import { useState, useEffect } from 'react'
 
@@ -11,7 +12,7 @@ export default function CrearPgo(){
     const [userLogged, setUserLogged] = useState(null)
     const [amount, setAmount] = useState(0)
     const [currency, setCurrency] = useState(null)
-    const [reference, setReference] = useState('')
+    const [description, setDescription] = useState('')
 
 
     useEffect(()=>{
@@ -24,15 +25,17 @@ export default function CrearPgo(){
 
     const fetchData = async () => {
         const dataCharge = {
-            amount,
+            amount: amount.toString(),
             currency,
-            reference,
+            description,
             customer_name: userLogged.name,
             customer_id: userLogged._id
         }
         axios.get('/api/charges', {params: dataCharge})
             .then(res =>{
                 console.log(res)
+                localStorage.lastPaymentMade = JSON.stringify(res.data)
+                Router.push('/pago-creado')
             })
             .catch(err =>{
                 console.log(err)
@@ -54,8 +57,8 @@ export default function CrearPgo(){
 
     }
 
-    const handleChangeReference = (event)=>{
-        setReference(event.target.value)
+    const handleChangeDescription = (event)=>{
+        setDescription(event.target.value)
     }
     
     return (
@@ -76,6 +79,10 @@ export default function CrearPgo(){
 
                 <div className='padding20'></div>
                 <div className='padding20'></div>
+
+                <div className='padding20'>
+                    <h2 className='font1-3em text-center'>Crear Pago en Crypto</h2>
+                </div>
 
                 <section className='my-container'>
                     <article className='padding20'>
@@ -104,9 +111,9 @@ export default function CrearPgo(){
                         </div>
 
                         <div className='margin10'>
-                            <h2 className='font1em'>Referencia:</h2>
+                            <h2 className='font1em'>Descripción:</h2>
                             <div className='flex'>
-                                <input className='my-input' type="text" onChange={handleChangeReference}/>
+                                <input className='my-input' type="text" onChange={handleChangeDescription}/>
                             </div>
                         </div>
                         <div className='margin10'>

@@ -6,16 +6,16 @@ dbConnect()
 const DOMAIN = process.env.DOMAIN || "http://localhost:3000"
 
 
-const {
-  COINBASE_API_KEY,
-  COINBASE_WEBHOOK_SECRET,
-} = require("../../../config");
+// const {
+//   COINBASE_API_KEY,
+//   COINBASE_WEBHOOK_SECRET,
+// } = require("../../../config");
 
 
 const { Client, resources } = require("coinbase-commerce-node");
 const Webhook = require("coinbase-commerce-node/lib/Webhook");
 
-Client.init(COINBASE_API_KEY);
+Client.init(process.env.COINBASE_API_KEY);
 
 const { Charge } = resources;
 

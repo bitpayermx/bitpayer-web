@@ -46,10 +46,14 @@ const Login = () => {
 
             <section className="flex flex-center">
               <div className="back-facebook pointer rounded font1em square50 flex flex-center flex-middle">
-                <FaFacebookF className=" font1em ion-social-facebook color-white" />
+                <a href="/api/facebook">
+                  <FaFacebookF className=" font1em ion-social-facebook color-white" />
+                </a>
               </div>
               <div className="back-blue pointer rounded font1em square50 margin0-20 flex flex-center flex-middle">
-                <AiOutlineTwitter className=" font1-5em ion-social-facebook color-white" />
+                
+                  <AiOutlineTwitter className=" font1-5em ion-social-facebook color-white" />
+                
               </div>
 
               <div className="back-gplus pointer rounded font1em square50 flex flex-center flex-middle">

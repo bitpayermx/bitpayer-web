@@ -5,7 +5,7 @@ import "../../../lib/passport";
 
 export default async function (req, res, next) {
   
-  await dbConnect();
+  // await dbConnect();
 
   // res.status(200).json({ name: 'no hay 500 aqui' + process.env.DOMAIN })
 

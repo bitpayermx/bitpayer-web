@@ -104,41 +104,40 @@ export default function CrearPgo(){
                                             <div>
                                                 <div className='payment-form'>
                                                     <div className='margin10'>
-                                                      <h2 className='font1-3em  text-center'>Crear Pago</h2>  
+                                                      <h2 className='font1-5em  text-center'>Crear Pago</h2>  
                                                     </div>
 
                                                     <article>
                                                         <div className='flex flex-middle'>
-                                                            <div className='margin10'>
-                                                                <h2 className='font1em margin-bottom5'>Cantidad:</h2>
-                                                                <div className='flex'>
-                                                                    <div className='flex'>
+                                                            <div className='margin10 width100'>
+                                                                <h2 className='font1em margin-bottom5 color-darkblue'>Cantidad:</h2>
+                                                                <div className='flex flex-between width100'>
+                                                                    <div className='flex margin-right20'>
                                                                         <input className='my-input' type="number" onChange={handleChangeAmount}/>
                                                                     </div>
 
-                                                                    <div className="back-white my-select font1em color-black" style={{width:100+"px"}}>
-                                                                        <select onChange={handleChangeCurrency}>
-                                                                            <option>-</option>
-                                                                            <option value="MXN">MXN</option>
-                                                                            <option value="USD">USD</option>
-                                                                        </select>
-                                                                        
-                                                                        <div class="my-select-icon color-black flex flex-middle">
-                                                                            <span class="ion-arrow-down-b"></span>
+                                                                    <div className='' style={{width:100+"px"}}>
+                                                                        <div className="back-white my-select font1em color-black width100" >
+                                                                            <select onChange={handleChangeCurrency}>
+                                                                                <option>-</option>
+                                                                                <option value="MXN">MXN</option>
+                                                                                <option value="USD">USD</option>
+                                                                            </select>
+                                                                            
+                                                                            <div class="my-select-icon color-black flex flex-middle">
+                                                                                <span class="ion-arrow-down-b"></span>
+                                                                            </div>
                                                                         </div>
                                                                     </div>
+                                                                    
                                                                 </div>
                                                                 
                                                             </div>
 
-                                                            <div className='margin10'>
-                                                                <h2 className='font1em opacity0 margin-bottom5'>|</h2>
-                                                                
-                                                            </div>
                                                         </div>
 
                                                         <div className='margin10'>
-                                                            <h2 className='font1em margin-bottom5'>Descripción:</h2>
+                                                            <h2 className='font1em margin-bottom5 colore-darkblue'>Descripción:</h2>
                                                             <div className='flex'>
                                                                 <textarea className='my-input' rows={3} onChange={handleChangeDescription}/>
                                                             </div>

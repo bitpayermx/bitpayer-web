@@ -39,19 +39,19 @@ const [userLogged, setUserLogged] = useState(null)
 
         <main>
         <section>
-		      <div class=" relative" style={{minHeight:95+"vh;", zIndex: 10}}>
+		      <div class=" relative" style={{minHeight:88+"vh;", zIndex: 10}}>
 		        
 		        <article class=" padding10-0 my-container call-wrap">
 		        <br />
 		        <br />
 		          {/* <!-- <img src="./common-bg1.png" class="width100  call-wrap-img-pattern" > -->
 		          <!-- <img src="./wave.png" class="width100 call-wrap-img-wave" style=""> --> */}
-		          <div class="relative padding15" style={{zIndex: 10, paddingTop:50+"px;"}}>
+		          <div class="relative padding15" style={{zIndex: 10, paddingTop:120+"px;"}}>
 		            <article class=" flex flex-between flex-middle">
 		              <div class="relative" style={{top:-20+"px;"}}>
 		                {/* <!-- <h1 class="font2em color-white call-wrap-main-text">Todo es más fácil con el celular <br /> pagar con <span class="color-green text-shadow-white1">Bitcoin</span>  también.</h1> --> */}
 
-		                <h1 class="font2-7em  call-wrap-main-text">Toma control sobre tu dinero. <br /> Con <span class="color-green text-shadow-white1">Bitcoin</span>,  eres tu propio banco.</h1>
+		                <h1 class="font2-5em  call-wrap-main-text">Toma control sobre tu dinero. <br /> Con <span class="color-green text-shadow-white1">Bitcoin</span>,  eres tu propio banco.</h1>
 
 		                <h2 class="font1-7em font-normal call-wrap-second-text">
 		                  Expande tus opciones de pago  de forma<br /> instantanea, sin riesgo ó fluctuación de precio.
@@ -60,15 +60,15 @@ const [userLogged, setUserLogged] = useState(null)
 		                
 
 
-		                <div class="call-wrap-actions margin-bottom30">
+		                <div class="call-wrap-actions margin-bottom30 padding10-0">
 						{
 							!userLogged && <Link href="/login">
-							<a className="my-btn back-green text-uppercase color-green contactanos">
-								<span className="font1em color-white">Iniciar Sesión</span>
+							<a className="my-btn back-green text-uppercase color-green">
+								<span className="font1em color-white">Comenzar Ahora</span>
 							</a>
 							</Link>
 						}
-		                  <a href="#ex1" class="anchor color-blue font1-5em" rel="modal:open">¿Qué es Bitcoin? </a>
+		                  <a href="#ex1" class="anchor color-blue font1-5em margin-left20" rel="modal:open">¿Qué es Bitcoin? </a>
 		                  {/* <!-- <a class="anchor font1-3em color-white call-wrap-actions-video" href="#" style="padding-bottom: 3px">
 		                    <span class="show-desktop margin-right5">Ver como</span>
 		                    
@@ -113,9 +113,9 @@ const [userLogged, setUserLogged] = useState(null)
 
 
 
-		                <figure class="relative" style={{width:390+"px;", zIndex:10, top:-35+"px;"}}>
+		                <figure class="relative" style={{ zIndex:10, top:-55+"px;", right: '1px'}}>
 		                  {/* <img  class="width100" /> */}
-                      <Image src="/payment-phone-dark.png" width={135} height={142}/>
+							<Image src="/payment-phone-dark.png" width={340} height={392}/>
 		                </figure>
 		              </div>
 		            </article>
@@ -370,7 +370,7 @@ const [userLogged, setUserLogged] = useState(null)
 
 			                <div class="flex flex-center services-item-btn">
 			                   <button class="my-btn back-darkblue-gradient block color-green">
-			                    <span class="font1-3em color-white relative" style={{left:2+"px;"}}>Más información <span class="ion-arrow-right-c font1em relative" style={{top:3+"px;"}}></span></span>
+			                    <span class="font1-3em color-white relative" style={{left:2+"px;"}}>- Próximamente -</span>
 			                  </button>
 			                </div>
 			                
@@ -395,9 +395,12 @@ const [userLogged, setUserLogged] = useState(null)
 		    <section class="back-darkblue padding20 color-white">
 		    	<div class="padding20">
 		    		<div class="flex flex-center">
-			    		<figure style={{width:180+"px;"}}>
+			    		{/* <figure style={{width:180+"px;"}}>
 			    			<img src="./booksingle.png" class="width100" />
-			    		</figure>
+			    		</figure> */}
+
+						<Image src="/booksingle.png" width={180} height={180}/>
+
 			    	</div>
 
 			    	<div>
@@ -518,8 +521,8 @@ const [userLogged, setUserLogged] = useState(null)
 		            <p class="font1-3em color-green">Básico</p>
 
 		            <div class="margin20-0">
-		              <p class="font2-8em font-bold color-darkblue">$21.00</p>
-		              <p class="font20 color-darkblue">/ 3 meses</p>
+		              <p class="font2-8em font-bold color-darkblue">$0.00</p>
+		              <p class="font20 color-darkblue">/ 24 meses</p>
 		            </div>
 		            
 
@@ -529,7 +532,7 @@ const [userLogged, setUserLogged] = useState(null)
 		            		<li class="text-center"><span class="color-green">•</span> Asesoría mensual (30 min.)</li>
 		            		<li class="text-center"><span class="color-green">•</span> Pagos en Bitcoin</li>
 		            	</ul>
-		            	<p class="color-green margin-top10">y más ...</p>
+		            	<p class="color-green margin-top10 font1em">y más ...</p>
 		            </div>
 
 		            <button class="my-btn back-white color-green contactanos">
@@ -553,7 +556,7 @@ const [userLogged, setUserLogged] = useState(null)
 		            		<li class="text-center"><span class="color-green">•</span> Pagos en Bitcoin</li>
 		            		<li class="text-center"><span class="color-green">•</span> Accesso a pool de productos</li>
 		            	</ul>
-		            	<p class="color-green margin-top10">y más ...</p>
+		            	<p class="color-green margin-top10 font1em">y más ...</p>
 		            </div>
 
 		            <button class="my-btn back-darkblue-gradient color-green">
@@ -580,7 +583,7 @@ const [userLogged, setUserLogged] = useState(null)
 		            		<li class="text-center"><span class="color-green">•</span> Pagos en Bitcoin</li>
 		            		<li class="text-center"><span class="color-green">•</span> Accesso a pool de productos</li>
 		            	</ul>
-		            	<p class="color-green margin-top10">y más ...</p>
+		            	<p class="color-green margin-top10 font1em">y más ...</p>
 		            </div>
 
 		            <button class="my-btn back-white color-green">

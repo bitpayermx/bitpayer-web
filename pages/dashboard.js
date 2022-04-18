@@ -11,6 +11,8 @@ import Footer from '../components/Footer.jsx'
 function Dashboard({ name, email, objUser }) {
   const router = useRouter();
 
+  const refreshData = () => router.replace(router.asPath);
+
   const logout = () => {
     removeCookies("token");
     router.replace("/");
@@ -19,6 +21,11 @@ function Dashboard({ name, email, objUser }) {
   useEffect(()=>{
     localStorage.user = objUser
     console.log('holaa' + new Date())
+    
+
+    setTimeout(()=>{
+      refreshData()
+    },4000)
   },['objUser'])
 
   return (

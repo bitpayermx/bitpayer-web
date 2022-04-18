@@ -27,8 +27,8 @@ const Footer = () => {
 		        <div className="text-center relative" style={{top:0+"px"}}>
 		          <h3 className="color-lightgray margin-bottom0 font1-3em">Vamos, Conectémos en la economía global!</h3>
 		          <p className="text-center color-white font2em padding10 margin-bottom10">
-		            <span className="ion-social-twitter margin-right20"></span>
-		            <a href="https://www.facebook.com/bitpayer.mx.1" className="ion-social-facebook margin-right20 color-white"></a>
+					<a target="_blank" href="https://twitter.com/Bitpayer_mx" className="ion-social-twitter  margin-right20 color-white"></a>
+		            <a target="_blank" href="https://www.facebook.com/bitpayer.mx.1" className="ion-social-facebook margin-right20 color-white"></a>
 		            <span className="ion-social-whatsapp"></span>
 		          </p>
 		          

@@ -22,6 +22,7 @@
 a,
 a:focus,
 a:hover {
+    display: inline-block;
     cursor: pointer !important;
     text-decoration: none
 }
@@ -557,7 +558,7 @@ h6 {
     border: 1px solid #c7d3df;
     border-radius: 3px;
     z-index: 5;
-    min-height: 40px;
+    min-height: 42px;
     margin:0 !important;
 }
 
@@ -2154,8 +2155,14 @@ label:hover:before {
     width: 80%;
     padding: 20px;
     margin:0 auto;
+    height: 400px;
     text-align: center;
     border-radius: 10px
+}
+
+.box-plan-item li {
+    font-size: 1.4em;
+    margin-bottom: 5px;
 }
 
 .box-plan-item .my-btn {
@@ -2169,20 +2176,21 @@ label:hover:before {
 
 .box-plan-item:first-child {
     position: relative;
-    right: -1px;
+    right: -30px;
     border-radius: 10px 0 0 10px
 }
 
 .box-plan-item:nth-child(2) {
     position: relative;
     z-index: 10;
+
     -webkit-box-shadow: 0 0 30px #d0e6ab;
     box-shadow: 0 0 30px #d0e6ab
 }
 
 .box-plan-item:nth-child(3) {
     position: relative;
-    left: -1px;
+    left: -30px;
     border-radius: 0 10px 10px 0
 }
 
@@ -2253,10 +2261,10 @@ label:hover:before {
     background: #032536;
     padding: 40px;
     position: absolute;
-    bottom: 30px;
+    bottom: 0px;
     right: 0;
-    width: 400px;
-    height: 600px;
+    width: 390px;
+    height: 700px;
     border-radius: 0 0 33px 600px;
     overflow: hidden
 }
@@ -3157,11 +3165,12 @@ body {
 
 
 .payment-form{
+    border: 4px solid #95ca3e;
     padding:20px 10px;
     width: 330px;
     background-color: #fff;
     height: 420px;
-    border-radius: 10px;
+    border-radius: 13px;
     box-shadow: 0 0 20px gray;
     position: relative;
     top: 50px;

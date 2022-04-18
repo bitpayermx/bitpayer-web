@@ -47,18 +47,18 @@ const Login = () => {
             <section className="flex flex-center">
               <div className="back-facebook pointer rounded font1em square50 flex flex-center flex-middle">
                 <a href="/api/facebook">
-                  <FaFacebookF className=" font1em ion-social-facebook color-white" />
+                  <FaFacebookF className=" font1em color-white" />
                 </a>
               </div>
               <div className="back-blue pointer rounded font1em square50 margin0-20 flex flex-center flex-middle">
-                
-                  <AiOutlineTwitter className=" font1-5em ion-social-facebook color-white" />
-                
+                <a href="/api/twitter">
+                  <AiOutlineTwitter className=" font1-5em  color-white" />
+                </a>
               </div>
 
               <div className="back-gplus pointer rounded font1em square50 flex flex-center flex-middle">
                 <a href="/api/google">
-                  <AiFillGoogleCircle className=" font1-5em ion-social-googleplus color-white" />
+                  <AiFillGoogleCircle className=" font1-5em color-white" />
                 </a>
                 
               </div>
@@ -94,16 +94,15 @@ const Login = () => {
                 />
               </div>
               <div className="flex width100 margin-bottom15">
-                <button className="my-btn back-darkblue width100">
-                  <h3 className="color-green text-uppercase font-normal">
-                    Iniciar sesión
-                  </h3>
+                <button class="my-btn back-darkblue-gradient color-darkblue text-uppercase block width100">
+                  <span class="font1em color-white">Ingresar</span>
                 </button>
+                
               </div>
 
               <div className="flex flex-center margin-bottom10">
                 <Link href="recuperar-contrasena" className="width100">
-                  <p className="color-blue pointer anchor text-center">
+                  <p className="color-blue pointer font1em anchor text-center">
                     ¿Olvidaste tu contraseña?
                   </p>
                 </Link>
@@ -111,16 +110,16 @@ const Login = () => {
 
               <br />
               <div className="flex flex-center margin-bottom15">
-                <p className="color-black pointer font16 text-center">
+                <p className="color-black pointer font1em text-center">
                   ¿Aún no tienes cuenta en Bitpayer?
                 </p>
               </div>
 
               <div className="flex width100">
-                <Link href="registro" className="width100">
-                  <button className="my-btn back-green width100">
-                    <h3 className="color-darkblue font-normal">Regístrate</h3>
-                  </button>
+                <Link href="/registro">
+                  <a className="my-btn back-green color-green block text-uppercase width100">
+                    <span className="color-white font1em">Regístrate ahora</span>
+                  </a>
                 </Link>
               </div>
             </section>

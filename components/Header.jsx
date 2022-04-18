@@ -76,15 +76,23 @@ export default function Header() {
                 </a>
               </Link>
 
-              {/* {
-                userLogged && <Link href="/crear-pago">
+              <Link href="/educacion">
+                <a
+                  className="color-white font1em margin-right25"
+                  href="/educacion"
+                >
+                  Asesorías
+                </a>
+              </Link>
+
+              <Link href="/crear-pago">
               <a
                 className="color-white font1em margin-right25 planes"
                 
               >
-                Crear Pago
+                Recibir Bitcoin
               </a>
-              </Link>} */}
+              </Link>
 
               {/* {
                 userLogged && <Link href="/mis-pagos">
@@ -97,12 +105,12 @@ export default function Header() {
               </Link>} */}
               
               
-              <a className="color-white font1em margin-right25" href="/blog">
+              {/* <a className="color-white font1em margin-right25" href="/blog">
                 Blog
-              </a>
+              </a> */}
               {
                 !userLogged && <Link href="/login">
-                  <a className="my-btn back-green color-green contactanos">
+                  <a className="my-btn back-green color-green text-uppercase">
                     <span className="color-white">Iniciar Sesión</span>
                   </a>
                 </Link>
@@ -120,7 +128,7 @@ export default function Header() {
                     showMenu && <MenuNav>
                       <div className="menu-profile">
                         <ul className="menu-profile-list">
-                          <Link href="/crear-pago"><li className="menu-profile-list-item"><a className=" margin-right25">Crear Pago</a></li></Link>
+                          {/* <Link href="/crear-pago"><li className="menu-profile-list-item"><a className=" margin-right25">Crear Pago</a></li></Link> */}
                           <Link href="/mis-pagos"><li className="menu-profile-list-item"><a className=" margin-right25">Pagos creados</a></li></Link>
                           <li className="menu-profile-list-item">Perfil</li>
                           <li className="menu-profile-list-item">Configuración</li>
